@@ -1,7 +1,7 @@
 FROM python:3
 
-COPY echo-server /
+COPY  /var/log/server.log  echo-server ./
 
 EXPOSE 65432
 
-ENTRYPOINT ["python", "echo-server"]
+ENTRYPOINT ["python3", "echo-server"]

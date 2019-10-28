@@ -14,3 +14,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         while True:
             data = conn.recv(1024)
             conn .sendall("OK:".encode('utf-8')+ data)
+            with open("/var/log/server.log",'w',encoding = 'utf-8') as f:
+                f.write(data)

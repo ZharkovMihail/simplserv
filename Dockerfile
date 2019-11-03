@@ -1,6 +1,6 @@
 FROM python:3
 
-COPY  /var/log/server.log  echo-server ./
+COPY echo-server /
 
 EXPOSE 65432
 
